@@ -2,6 +2,7 @@
 
 function reverse (sen) {
     const seperateWord = sen.split(" ")
+    // reverse single word
     let sentence = ""
     for(i = 0; i<seperateWord.length; i++){
         const word = seperateWord[i]
@@ -14,7 +15,9 @@ function reverse (sen) {
 
         sentence += joined + " "
     }
-    return sentence.split(" ").reverse().join(" ")
+    return sentence;
+    // reverse full sentence
+    //return sentence.split(" ").reverse().join(" ")
    
 }
 const r = reverse("Welcome to this Javascript Guide!")
